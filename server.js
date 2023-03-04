@@ -49,6 +49,7 @@ function arsivyukleme(){
         const parser = new DOMParser();
         const htmlDocument = parser.parseFromString(data, 'text/html');
         const videolar = htmlDocument.getElementsByClassName("name");
+        console.log(videolar)
         for(const link of videolar) {
             const videoisim = link.textContent;
             const videobaslik = videoisim.slice(0,-4)
