@@ -41,9 +41,9 @@ function arsivyukleme(){
     karaekran = document.createElement('div')
     karaekran.setAttribute("id", "karaekran")
     karaekran.style.zIndex=4
-    let klasör = 'arsivden-videolar\ '
-    console.log(klasör)
-    fetch(klasör)
+    let klasor = 'arsivden-videolar\ '
+    console.log(klasor)
+    fetch(klasor)
     .then(response => response.text())
     .then(data => {
         const parser = new DOMParser();
