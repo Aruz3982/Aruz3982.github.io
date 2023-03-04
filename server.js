@@ -14,6 +14,7 @@ function degistir(sayfa) {
             }
           });
 }
+degistir('server2.html')
 function call(){
 const video = document.getElementById("vidto");
 video.volume = 0.2;
@@ -41,9 +42,8 @@ function arsivyukleme(){
     karaekran = document.createElement('div')
     karaekran.setAttribute("id", "karaekran")
     karaekran.style.zIndex=4
-    let klasor = 'arsivden-videolar\ '
+    let klasor = 'Aruz3982.github.io/arsivden-videolar/ '
     console.log(klasor)
-    fetch(klasor)
     .then(response => response.text())
     .then(data => {
         const parser = new DOMParser();
