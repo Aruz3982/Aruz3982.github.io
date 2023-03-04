@@ -52,7 +52,7 @@ function arsivyukleme(){
         for(const link of videolar) {
             const videoisim = link.textContent;
             const videobaslik = videoisim.slice(0,-4)
-            const videolink = "arsivden-videolar/" + videoisim
+            const videolink = "Aruz3982.github.io/arsivden-videolar/" + videoisim
             if(videoisim == ".."){
                 continue;
             }
