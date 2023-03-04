@@ -41,7 +41,7 @@ function arsivyukleme(){
     karaekran = document.createElement('div')
     karaekran.setAttribute("id", "karaekran")
     karaekran.style.zIndex=4
-    let klasör = 'https://aruz3982.github.io/arsivden-videolar/ '
+    let klasör = 'C:\Users\adile\OneDrive\Belgeler\Aruz3982.github.io\arsivden-videolar\ '
     fetch(klasör)
     .then(response => response.text())
     .then(data => {
@@ -51,7 +51,7 @@ function arsivyukleme(){
         for(const link of videolar) {
             const videoisim = link.textContent;
             const videobaslik = videoisim.slice(0,-4)
-            const videolink = "arsivden-videolar/" + videoisim
+            const videolink = "C:\Users\adile\OneDrive\Belgeler\Aruz3982.github.io\arsivden-videolar\ " + videoisim
             console.log(videobaslik)
             if(videoisim == ".."){
                 continue;
