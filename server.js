@@ -44,8 +44,8 @@ function arsivyukleme(){
     karaekran.style.zIndex=4
     let klasor = 'Aruz3982.github.io/arsivden-videolar/ '
     fetch(klasor)
-    .then(response => response.text())
-    .then(data => {
+      .then(response => response.text())
+      .then(data => {
         const parser = new DOMParser();
         const htmlDocument = parser.parseFromString(data, 'text/html');
         const videolar = htmlDocument.getElementsByClassName("name");
