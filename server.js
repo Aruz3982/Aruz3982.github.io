@@ -52,6 +52,7 @@ function arsivyukleme(){
             const videoisim = link.textContent;
             const videobaslik = videoisim.slice(0,-4)
             const videolink = "arsivden-videolar/" + videoisim
+            console.log(videobaslik)
             if(videoisim == ".."){
                 continue;
             }
