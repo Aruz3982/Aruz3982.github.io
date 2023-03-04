@@ -42,6 +42,7 @@ function arsivyukleme(){
     karaekran.setAttribute("id", "karaekran")
     karaekran.style.zIndex=4
     let klasör = 'arsivden-videolar\ '
+    console.log(klasör)
     fetch(klasör)
     .then(response => response.text())
     .then(data => {
