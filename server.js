@@ -43,7 +43,7 @@ function arsivyukleme(){
     karaekran.setAttribute("id", "karaekran")
     karaekran.style.zIndex=4
     let klasor = 'Aruz3982.github.io/arsivden-videolar/ '
-    console.log(klasor)
+    fetch(klasor)
     .then(response => response.text())
     .then(data => {
         const parser = new DOMParser();
